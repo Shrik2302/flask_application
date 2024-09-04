@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% from "macro.html" import hello, display_numbers %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<h1>{{ hello("vijay") }}</h1>
+<h1>{{ display_numbers(numbers) }}</h1>
+<li><a href="{{ url }}"><h1>link from py file</h1></a></li>
+<h1>Examples</h1>
+<ul>
+    <li><a href="{{ url_for('index')}}"><h1>home</h1></a></li>
+    <li><a href="{{ url_for('user', name='shrikant')}}"><h1>shrikant profile</h1></a></li>
+    <li><a href="{{ url_for('index_req')}}"><h1>user_agent</h1></a></li>
+</ul>
+
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+{% macro hello(name) %}
+<h1>{{ name }}</h1>
+{% endmacro %}
+
+{% macro display_numbers(numbers) %}
+{% for num in numbers %}
+    <h1>{{ num }}</h1>
+{% endfor %}
+{% endmacro %}
